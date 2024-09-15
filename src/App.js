@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Tooltip from "./components/Tooltip";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ padding: "50px" }}>
+      <h1>React Tooltip Example</h1>
+
+      <Tooltip content="This is a tooltip at the top" position="top">
+        <button>Hover me (Top)</button>
+      </Tooltip>
+
+      <Tooltip content="This is a tooltip at the bottom" position="bottom">
+        <button style={{ marginLeft: "20px" }}>Hover me (Bottom)</button>
+      </Tooltip>
+
+      <Tooltip content="This is a tooltip on the left" position="left">
+        <button style={{ marginLeft: "20px" }}>Hover me (Left)</button>
+      </Tooltip>
+
+      <Tooltip content="This is a tooltip on the right" position="right">
+        <button style={{ marginLeft: "20px" }}>Hover me (Right)</button>
+      </Tooltip>
     </div>
   );
 }

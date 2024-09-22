@@ -3,7 +3,7 @@ import Tooltip from "./components/Tooltip";
 
 function App() {
   return (
-    <div className="App" style={{ padding: "50px" }}>
+    <div className="App" style={{ padding: "50px",backgroundColor:"green" }}>
       <h1>React Tooltip Example</h1>
 
       <Tooltip content="This is a tooltip at the top" position="top">
